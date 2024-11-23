@@ -1,0 +1,10 @@
+# Use Deno runtime as base image
+FROM denoland/deno:alpine-2.1.0
+
+WORKDIR /app
+COPY . .
+
+RUN apk update && apk add --no-cache postgresql16-client 
+EXPOSE 8000
+
+CMD ["deno", "task", "run:restore-r2", "--key=backups/<project-name>/backup_1732267131464.tar"]

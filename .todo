@@ -1,0 +1,6 @@
+# TODO:
+
+- [ ] Support multiple database auto-backups with customizable backup policies  
+- [ ] Retry on failure with customizable settings  
+- [ ] Trigger an email notification if a failure occurs  
+- [ ] Make it serverless (AWS Lambda – cost-effective)

@@ -1,0 +1,29 @@
+
+# Use Deno runtime as base image
+FROM denoland/deno:alpine-2.1.0
+
+# Set working directory
+WORKDIR /app
+
+# Copy source files and deno.json explicitly
+COPY . .
+COPY deno.json /app/deno.json
+
+# Update package index and install required packages
+RUN apk update && apk add --no-cache postgresql16-client bash curl cronie dos2unix
+
+# Add cron job for daily execution of the backup task
+RUN echo "0 0 * * * /app/run_automate.sh >> /var/log/cron.log 2>&1" > /etc/crontabs/root
+
+# Expose port for monitoring (if needed)
+EXPOSE 8000
+
+# Copy the startup and wrapper scripts
+COPY start.sh /app/start.sh
+COPY run_automate.sh /app/run_automate.sh
+
+# Ensure scripts have executable permissions and correct line endings
+RUN chmod +x /app/start.sh /app/run_automate.sh && dos2unix /app/start.sh /app/run_automate.sh
+
+# Use the startup script as the entrypoint
+ENTRYPOINT ["/bin/bash", "/app/start.sh"]

@@ -1,0 +1,27 @@
+# Ignore logs
+# logs
+# *.log
+# *.out
+
+# Ignore backups and generated files
+backups/
+*.tar
+
+# Ignore Deno's cache and config files
+.deno/
+deno.lock
+deno_cache/
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore editor files
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Ignore build outputs (if any)
+dist/
+build/
