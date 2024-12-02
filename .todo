@@ -4,3 +4,5 @@
 - [ ] Implement retry on failure with customizable settings
 - [ ] Trigger email notifications if a failure occurs
 - [ ] Make it serverless (AWS Lambda – cost-effective)
+- [ ] Support MySQL
+- [ ] Support MongoDB
