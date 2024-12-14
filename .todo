@@ -1,8 +1,29 @@
-# TODO:
+# TODO
 
-- [ ] Support automatic backups for multiple databases with customizable backup policies
-- [ ] Implement retry on failure with customizable settings
-- [ ] Trigger email notifications if a failure occurs
-- [ ] Make it serverless (AWS Lambda – cost-effective)
-- [ ] Support MySQL
-- [ ] Support MongoDB
+## Phase 1:
+- [x] Implement the option to create a PostgreSQL snapshot and upload it to R2.
+- [x] Implement the option to restore a snapshot from R2 to another PostgreSQL database.
+
+## Phase 2:
+- [ ] Provide a step-by-step guide for setting up logical replication for PostgreSQL on Railway.app.  
+  **Note:** Instructions may vary depending on the platform.
+- [ ] Build an automation tool for PostgreSQL synchronization (subscription management).
+- [ ] Automate or provide guidance for logical replication in self-hosted PostgreSQL environments.
+- [ ] Automate or provide guidance for logical replication on popular platforms like AWS and others.
+
+## Phase 3:
+- [ ] Make the solution serverless using AWS Lambda for cost efficiency.
+
+## Phase 4:
+- [ ] Implement a retry mechanism on failure with customizable settings.
+- [ ] Trigger email notifications when a failure occurs.
+
+## Phase 5:
+- [ ] Add support for automatic backups of multiple databases with customizable backup policies.
+- [ ] Implement a user-friendly interface for ease of use.
+
+## Phase 6:
+- [ ] Add support for MySQL.
+
+## Phase 7:
+- [ ] Add support for MongoDB.
