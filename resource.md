@@ -8,4 +8,5 @@
 - https://railway.app/template/MfqQcU
 - https://github.com/shayonj/pg_easy_replicate
 
+**Logical replication(Easy way):**
 - https://hevodata.com/learn/postgresql-logical-replication/?source=post_page-----a6d849ceb83e--------------------------------

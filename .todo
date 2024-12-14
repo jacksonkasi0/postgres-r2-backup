@@ -4,12 +4,13 @@
 - [x] Implement the option to create a PostgreSQL snapshot and upload it to R2.
 - [x] Implement the option to restore a snapshot from R2 to another PostgreSQL database.
 
-## Phase 2:
+## Phase 2: ❌
 - [ ] Provide a step-by-step guide for setting up logical replication for PostgreSQL on Railway.app.  
   **Note:** Instructions may vary depending on the platform.
 - [ ] Build an automation tool for PostgreSQL synchronization (subscription management).
 - [ ] Automate or provide guidance for logical replication in self-hosted PostgreSQL environments.
 - [ ] Automate or provide guidance for logical replication on popular platforms like AWS and others.
+  **Note:** Logical replication will not be implemented. checkout the resources.md file for more information.
 
 ## Phase 3:
 - [ ] Make the solution serverless using AWS Lambda for cost efficiency.
